@@ -1,0 +1,35 @@
+<android.support.constraint.ConstraintLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <Button
+        android:id="@+id/right"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Touch right for music"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/left"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/left"
+        android:layout_width="207dp"
+        android:layout_height="779dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="3dp"
+        android:background="#FFFFFF"
+        android:text="Touch left to make calls"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#E91E63"
+        app:layout_constraintBaseline_toBaselineOf="@+id/right"
+        app:layout_constraintEnd_toStartOf="@+id/right"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Touch left to make calls" />
+
+</android.support.constraint.ConstraintLayout>
